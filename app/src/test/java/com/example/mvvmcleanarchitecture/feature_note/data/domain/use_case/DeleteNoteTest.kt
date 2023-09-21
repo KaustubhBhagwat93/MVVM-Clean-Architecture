@@ -25,7 +25,7 @@ class DeleteNoteTest {
     @Test
     fun `delete note test`() = runBlocking {
         val note =
-            Note(title = "This is title", content = "This is content", timeStamp = System.currentTimeMillis(), color = 0)
+            Note(title = "Title", content = "Content", timeStamp = System.currentTimeMillis(), color = 0)
         addNote(note = note)
         deleteNote(note)
     }
