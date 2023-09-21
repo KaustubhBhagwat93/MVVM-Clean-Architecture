@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.flow
 class MockNoteRepository : NoteRepository {
     private val notes = mutableListOf<Note>()
 
-
     override fun getNotes(): Flow<List<Note>> {
         return flow{emit(notes)}
     }
